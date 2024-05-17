@@ -10,7 +10,7 @@ import TestimonialsSection from "@components/sections/testimonials/TestimonialsS
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/home1.png";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
@@ -28,16 +28,16 @@ const avatarSrcs: Array<string> = [
 ---
 
 <MainLayout>
-  <AnnouncementBanner
+  <!-- <AnnouncementBanner
     btnId="dismiss-button"
     btnTitle="Explore ScrewFast on GitHub"
     url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  /> -->
 
   <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
+    title=`Automate Your Home Life with <span
+        class="text-yellow-500 dark:text-yellow-400">AutoLifeTech</span>`
+    subTitle="Premium smart home solutions and expert installation services for every project need."
     primaryBtn="Start Exploring"
     primaryBtnURL="/products"
     secondaryBtn="Contact Sales Team"
@@ -46,7 +46,7 @@ const avatarSrcs: Array<string> = [
     avatars={avatarSrcs}
     rating=`<span class="font-bold">4.8</span> / 5`
     starCount={4}
-    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+    reviews=`Singapore Trusted <span class="font-bold">Smart Home</span> Partner`
     src={heroImage}
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
