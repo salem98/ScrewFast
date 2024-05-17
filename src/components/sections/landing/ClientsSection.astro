@@ -2,6 +2,9 @@
 // Define props from Astro
 const { title, subTitle } = Astro.props;
 
+import { Image } from "astro:assets";
+import BrandLogo1 from "@images/tuya-logo.png";
+
 // Define TypeScript interface for props
 interface Props {
   title: string;
@@ -32,11 +35,7 @@ interface Props {
   >
     <!-- Clients Group SVGs -->
     <!-- First -->
-    <img
-      class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5"
-      src="/src/images/tuya-logo.png"
-      alt="Tuya Logo"
-    />
+    <Image class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5" src={BrandLogo1} alt="Tuya Logo" />
     <!-- Second -->
     <img
       class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5"
