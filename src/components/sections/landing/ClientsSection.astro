@@ -4,6 +4,9 @@ const { title, subTitle } = Astro.props;
 
 import { Image } from "astro:assets";
 import BrandLogo1 from "@images/tuya-logo.png";
+import BrandLogo2 from "@images/tuya-logo.png";
+import BrandLogo3 from "@images/tuya-logo.png";
+import BrandLogo4 from "@images/tuya-logo.png";
 
 // Define TypeScript interface for props
 interface Props {
@@ -36,23 +39,8 @@ interface Props {
     <!-- Clients Group SVGs -->
     <!-- First -->
     <Image class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5" src={BrandLogo1} alt="Tuya Logo" />
-    <!-- Second -->
-    <img
-      class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5"
-      src="/src/images/zigbee-1024x246.webp"
-      alt="Zigbee Logo"
-    />
-    <!-- Third -->
-    <img
-      class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5"
-      src="/src/images/xiaomi-1024x282.webp"
-      alt="Xiaomi Logo"
-    />
-    <!-- Fourth -->
-    <img
-      class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5"
-      src="/src/images/LG-1024x488.webp"
-      alt="LG Logo"
-    />
+    <Image class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5" src={BrandLogo2} alt="Tuya Logo" />
+    <Image class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5" src={BrandLogo3} alt="Tuya Logo" />
+    <Image class="mx-auto h-auto w-32 py-3 sm:mx-0 lg:w-40 lg:py-5" src={BrandLogo4} alt="Tuya Logo" />
   </div>
 </section>
